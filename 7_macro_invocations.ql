@@ -1,5 +1,5 @@
 import cpp
 
 from MacroInvocation m
-where m.getParentInvocation().getMacroName().regexpMatch("ntoh(l|s)l?")
+where m.getMacro().getName().regexpMatch("^ntoh(l|s)l?")
 select m
